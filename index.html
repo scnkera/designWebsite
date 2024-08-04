@@ -27,48 +27,58 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
     />
     <!-- Favicon imagine link -->
-    <link rel="icon" type="image/x-icon" href="./static/faviconLogo.ico" />
+    <link rel="icon" type="image/x-icon" href="" />
     <!-- Link to Main Page Style Sheet -->
     <link href="./styles/optionA.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="./styles/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="./styles/style_edits.css">
   </head>
   <body>
-    <div class="container-fluid">
-        <div class="row d-flex align-items-center text-center" id="hero">
-            <div class="col-lg-6 col-sm-12 d-flex align-items-center" id="hero_left">
-                <div class="row" id="h_l_row">
-                    <div class="col"></div>
-                    <div class="col-8" id ="h_l_col_1">
-                        <img src="./static/beauty1.jpg" class="img-fluid" alt="Responsive image" id="beauty_img">
-                    </div>  
-                    <div class="col"></div>
-                    <!-- <div class="col" id = "h_r_col_2"></div>   -->
-                </div>
-                <!-- end of left -->
-            </div>
-            
-            <div class="col-lg-6 col-sm-12" id="hero_right">
-                <div class="row">
-                    <div class="col text-end" id="h_r_title">
-                        <!-- <p>Fruits<br>Flowers<br>& Facials</p> -->
-                        <div>FRUITS,</div>
-                        <div>FLOWERS,</div>
-                        <div>and FACIALS</div>
-                    </div>
-                </div>
-
-                <div class="row" id="h_r_row_top">
-                    <div class="col"></div>
-                    <div class="col-10">
-                        <img src="./static/beauty4.png" class="img-fluid" alt="Responsive image" id="beauty_img">
-                    </div>
-                    <div class="col"></div>
-                </div>
-                <!-- <div class="row" id="h_r_row_bottom">
-                    <div class="col" id ="h_r_col_1"></div>  
-                </div> -->
-            </div>
+    <section class="home">
+      <div id="carousel" class="carousel slide" data-ride="carousel">
+    
+        <div class="carousel-controls">
+          <ol class="carousel-indicators">
+            <li data-target="#carousel" data-slide-to="0" style="background-image: url(img/slide-1.jpg);"></li>
+            <li data-target="#carousel" data-slide-to="1" style="background-image: url(img/slide-2.jpg);"></li>
+            <li data-target="#carousel" data-slide-to="2" style="background-image: url(img/slide-3.jpg);"></li>
+          </ol>
+    
+          <a class="carousel-control-prev" role="button" data-slide="prev" href="#carousel">
+            <img src="./static/left.png" alt="Previous">
+          </a>
+          <a class="carousel-control-next" role="button" data-slide="next" href="#carousel">
+            <img src="./static/right.png" alt="Next">
+          </a>
+    
         </div>
-        <!-- end of container fluid -->
-    </div>
+        
+        <div class="carousel-inner">
+          <div class="carousel-item active" style="background-image: url(./static/designSS/slide_one.png); opacity:1;">
+            <div class="container">
+              <h2>Campaign Design</h2>
+              <p>Artist</p>
+            </div>
+          </div>
+    
+          <div class="carousel-item" style="background-image: url(./static/designSS/slide_two.png); opacity:1;">
+            <div class="container" style="opacity:1;">
+              <h2>I'm Ronda</h2>
+              <p>Call to Action</p>
+            </div>
+          </div>
+    
+          <div class="carousel-item" style="background-image: url(./static/designSS/slide_two.png); opacity:1;">
+            <div class="container">
+              <h2>I'm Linda</h2>
+              <p>Call to Action</p>
+            </div>
+          </div>
+        </div>
+      
+      </div>
+    </section>
+     
+    <script src="./scripts/bootstrap.bundle.min.js"></script>
   </body>
  
